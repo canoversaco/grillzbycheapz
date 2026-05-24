@@ -10,17 +10,31 @@
 
 **Letzter Agent:** Claude
 **Datum:** 2026-05-24
-**Status:** Projekt initialisiert
+**Status:** App-Skeleton komplett, Build erfolgreich
 
 ### Was wurde gemacht:
-- Git Repo initialisiert (main branch)
-- Design-Spec geschrieben: `docs/superpowers/specs/2026-05-24-grillzbycheapz-design.md`
-- HANDOFF.md erstellt (diese Datei)
-- Next.js Projekt wird als nächstes aufgesetzt
+- Git Repo initialisiert (main branch) + GitHub Remote: `github.com/canoversaco/grillzbycheapz`
+- Design-Spec: `docs/superpowers/specs/2026-05-24-grillzbycheapz-design.md`
+- Next.js 15 App mit allen Sektionen aufgesetzt
+- 3D Gebiss-Viewer mit React Three Fiber (parametrisches Modell, 4 Styles, Ober-/Unterkiefer Toggle)
+- GSAP ScrollTrigger Animationen (Hero Buchstaben-Animation, Scroll-Reveals, Parallax, Batch-Fade)
+- Tailwind CSS Styling: Schwarz/Gold Theme, Apple-style
+- Buchungsformular (Frontend-only, API Route fehlt noch)
+- `next build` erfolgreich
+
+### Dateien:
+- `app/layout.tsx` — Root Layout mit Inter Font, Metadata
+- `app/page.tsx` — Entry, rendert SiteExperience
+- `app/globals.css` — Globale Styles, Buttons, Animationen, Produkt-Visuals
+- `components/SiteExperience.tsx` — Alle Sektionen (Hero, Produkte, 3D Viewer, Über, Buchung, Footer)
+- `components/GrillzStage.tsx` — React Three Fiber 3D-Szene mit Gebiss-Modell
 
 ### Nächster Schritt (für Codex):
 - Lies die Design-Spec in `docs/superpowers/specs/2026-05-24-grillzbycheapz-design.md`
-- Übernimm das visuelle Design: Hero-Sektion, Animationen, 3D-Viewer
+- **Visuelle Polish:** Verbessere das cinematische Feeling — Lichteffekte, Shader-Qualität, Micro-Animationen
+- **3D-Modell:** Das aktuelle Gebiss ist parametrisch (RoundedBox). Wenn möglich: realistischere Zahnformen
+- **Produkt-Karten:** Hover-Effekte verfeinern, evtl. 3D-Preview pro Karte
+- **Mobile:** Touch-Gesten im 3D-Viewer testen/optimieren
 - Schreibe deinen Status hier rein wenn du fertig bist
 
 ---
